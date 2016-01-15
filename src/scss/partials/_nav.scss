@@ -1,0 +1,41 @@
+.nav {
+  ul {
+    list-style: none;
+    li {
+      a {
+
+      }
+    }
+  }
+}
+
+.arrows {
+    display: flex;
+    // border: 1px solid red;
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+
+        li{
+
+        }
+    }
+                #north  {
+                    list-style: none;
+                }
+                #east   {
+                    list-style: none;
+                    align-self: center;
+                }
+                #south  {
+                    list-style: none;
+                    align-self: flex-end;
+                }
+                #west   {
+                    list-style: none;
+                    align-self: center;
+                }
+}
+

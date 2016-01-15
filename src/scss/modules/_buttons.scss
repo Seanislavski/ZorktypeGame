@@ -1,0 +1,51 @@
+*, :before, :after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font: 300 3em/1em 'Open Sans', sans-serif;
+  border-bottom: solid 2px #000;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.button,
+[class*="button-"] {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  // float: left;
+  margin: 0 1em 1em 0;
+  padding: 0 4em;
+  height: 3.5em;
+  font: 300 1em/3.5em 'Open Sans', sans-serif;
+  text-decoration: none;
+  // text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  letter-spacing: .08em;
+  color: white;
+  background: $buttonback;
+  border: solid 1px #fff;
+  border-radius: 2px;
+  -moz-transition: ease 0.35s all;
+  -o-transition: ease 0.35s all;
+  -webkit-transition: ease 0.35s all;
+  transition: ease 0.35s all;
+}
+.button:hover,
+[class*="button-"]:hover {
+  background: darken($buttonback, 10%);
+  // box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.button-hover:hover {
+  line-height: 9em;
+}
+.button-hover:before {
+  content: attr(data-text);
+  color: #DEEFF5;
+  position: absolute;
+  top: -2.75em;
+}

@@ -1,0 +1,15 @@
+.sidebar {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 0 0 12em;
+    // height: 100vh;
+
+}
+.left{
+    justify-content: flex-end;
+    order: -1;
+}
+.right{
+    justify-content: flex-end;
+    order: 4;
+}
